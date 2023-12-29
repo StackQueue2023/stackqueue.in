@@ -1,0 +1,259 @@
+*{
+  overflow: hidden;
+}
+.splash-screen{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5e5e5;
+  margin-top: 7%;
+  padding: 2rem 2rem 2rem 2rem;
+  height: 87vh;
+  position: relative;
+}
+.lifetime-access h2{
+  font-size: 2.6rem;
+  color: black;
+  font-weight:bolder;
+}
+#elicit{
+  font-weight: bolder;
+}
+.lifetime-access h2 span{
+  color: green;
+  animation: slide 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.lifetime-access p{
+  color: #000;
+  width: 700px;
+  text-align: justify;
+}
+@keyframes slide {
+  0%{
+    transform: scaleY(0);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+}
+.start-course{
+  background-color: rgb(118,63,199);
+  width: 350px;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight:900;
+  color: #fff;
+  text-shadow: 0px 0.5px 1px 1px black,
+                1px 2px 2px 2px black;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 20px;
+}
+.start-course .getclick{
+  display: flex;
+  justify-content: space-around;
+}
+.line-container{
+  position: absolute;
+  top: 16%;
+  left: 40%;
+}
+.line-container svg{
+  width: 150px;
+  height: 150px;
+}
+.line-container svg path{
+  stroke: #000;
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: draw 3s linear infinite;
+}
+@keyframes draw {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+.section .span{
+  position: absolute;
+  top: 43%;
+  right: 20%;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #808080;
+  border-radius: 50%;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.section .span::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  position: absolute;
+  border-radius: 50%;
+  top: 5%;
+  left: 20%;
+}
+.section2 .span2{
+  position: absolute;
+  top: 63%;
+  right: 35%;
+  width: 230px;
+  height: 230px;
+  /* border: 3px solid red; */
+  border-radius: 50%;
+  animation: rotate 15s linear infinite;
+}
+.section2 .span2 .iso{
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  top: 0%;
+  left: 30%;
+}
+.section2 .span2 .msme{
+  width: 70px;
+  height: 60px;
+  position: absolute;
+  top: 25%;
+  right: -1%;
+}
+.section2 .span2 .lifetime{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 60%;
+  right: 10%;
+}
+.section2 .span2 .graduation{
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 58%;
+  left: 12%;
+}
+.section2 .span2 .bookloop{
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 22%;
+  left: 0;
+}
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  10%{ transform: rotate(2.5deg);}
+  25% { transform: rotate(8deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-8deg); }
+  100% { transform: rotate(0deg); }
+}
+@keyframes shakeone {
+  0% { transform: rotate(0deg); }
+  10%{ transform: rotate(1.5deg);}
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+.students{
+  position: absolute;
+  top: 42%;
+  right: 20%;
+}
+.students img{
+  width: 240px;
+  height: 240px;
+}
+.institute-name{
+  position: absolute;
+  top: 50%;
+  right: 26.5%;
+}
+.institute-name img{
+  width: 80px;
+  height: 50px;
+}
+.splash-screen-home3 img{
+  width: 600px;
+  height: 76vh;
+  filter: drop-shadow(30px 10px 4px #A9A9A9);
+}
+.splashnew{
+  position: absolute;
+  top: 10%;
+  right: 25%;
+}
+.splashnew img{
+  filter: drop-shadow(30px 10px 4px #A9A9A9);
+}
+.active{
+  background-color: green;
+}
+.dots-rectangle{
+  position: absolute;
+  top: 65%;
+  right: 45%;
+  animation: move 8s linear infinite;
+}
+.dots-rectangle img{
+  width: 95px;
+  height: 130px;
+  opacity: 0.5;
+}
+@keyframes move {
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.latest-news{
+  position: absolute;
+  top: 56%;
+  right: 40%;
+}
+.workshop{
+  background-color: #121534;
+  color: #fff;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px 10px 0 0;
+}
+.workshop-btn{
+  background-color: #121534;
+  color: #fff;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 0 0 10px 10px;
+}
+.logo-event{
+margin-bottom: -9%;
+}
+.logo-event img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: #e5e5e5;
+  border-radius: 50%;
+border: 10px solid #4F5DE4;
+}
+.workshop-btn button{
+  border-radius: 10px;
+  background-color: rgb(118,63,199);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  border: none;
+  display: flex;
+  align-items: center;
+}

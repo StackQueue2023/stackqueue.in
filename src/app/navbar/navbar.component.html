@@ -1,0 +1,42 @@
+<!-- Description: This is Navigation bar page to create header for all the pages.
+     Author     : JEEVA ARAVINTH J V
+     Start Date : 01 Dec 2023
+     End Date   :
+     Reviewed   :
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salem Institution | Navbar</title>
+</head>
+<body>
+
+   <!-- Header code starts -->
+   <header #header class="header">
+    <div class="institution-logo">
+      <div><a (click)="home()"><img src="../../assets/Stack Queue logo white.png" alt="Salem Institution"></a></div>
+      <div>
+        <nav class="salem-courses">
+          <a href="">Courses</a>
+          <a (click)="internship()">Internship</a>
+          <a href="">Projects</a>
+        </nav>
+      </div>
+    </div>
+    <div class="programming-skills">
+      <div class="salem-search"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <div class="education-bell"><i class="fa-regular fa-bell"></i></div>
+      <div class="india-lang">
+        <div><i class="fa-solid fa-earth-americas"></i></div>
+        <div><h3>EN</h3></div>
+      </div>
+      <div><button class="course-login" (click)="loginPage()">Sign in</button></div>
+    </div>
+  </header>
+  <!-- Header code ends -->
+
+</body>
+</html>

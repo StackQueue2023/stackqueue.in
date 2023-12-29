@@ -1,0 +1,92 @@
+:host{
+  --color:#3d106b;
+  --whitecolor:#fff;
+}
+.technology{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 4rem 2rem 2rem 2rem;
+}
+.tech-items .logo img{
+  width: 310px;
+  height: 221px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.tech-items .logo{
+  position: relative;
+}
+.free-source{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.free-source p{
+  color: var(--whitecolor);
+  background-color: #7E30E1;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-weight: 550;
+}
+.technology .tech-items{
+  width: 310px;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.technology .tech-items .contents{
+  background-color: var(--whitecolor);
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.technology .tech-items .contents h1{
+  font-size: 1.3rem;
+}
+.lecturer i{
+  color: var(--color);
+  font-size: 1.5rem;
+}
+.lecturer{
+  display: flex;
+  justify-content: space-between;
+}
+.lecturer #lecturer{
+  display: flex;
+  align-items: center;
+}
+.lecturer #learners{
+  display: flex;
+  align-items: center;
+}
+.voilet-div{
+    width: 100%;
+    height: 1px;
+    background-color: var(--color);
+}
+.learner{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.enroll{
+  display: flex;
+  justify-content: space-between;
+}
+.enroll h3{
+  color: var(--color);
+}
+.enroll button{
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: var(--color);
+  color: var(--whitecolor);
+  border-radius: 10px;
+  border: none;
+}

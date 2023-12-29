@@ -1,0 +1,108 @@
+<!-- Description: This is Internship page to overview the internship availability
+     Author     : JEEVA ARAVINTH J V
+     Start Date : 12 Dec 2023
+     End Date   :
+     Reviewed   :
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internships</title>
+</head>
+<body>
+
+    <div class="internship">
+      <div>
+        <app-navbar></app-navbar>
+      </div>
+      <div class="splash">
+        <div class="content">
+          <b><h1>Integrate <span>STACK-QUEUE</span></h1>
+          <h1>with any technology</h1></b>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci fugit accusantium ratione sint nisi sequi dignissimos blanditiis sunt, maxime placeat, omnis, sed debitis laborum sit. Quae quaerat tenetur voluptatibus.</p>
+        </div>
+        <div class="images">
+          <div class="logos">
+            <img src="../../assets/Angular.png" alt="" id="angular">
+            <img src="../../assets/Figma.png" alt="" id="figma">
+            <img src="../../assets/flutter.png" alt="" id="flutter">
+            <div class="fullstack">
+            <img src="../../assets/fullstack.png" alt="" id="fullstack">
+            <h5>Full Stack</h5>
+          </div>
+            <img src="../../assets/python.png" alt="" id="python">
+            <img src="../../assets/react.png" alt="" id="react">
+            <img src="../../assets/java.png" alt="" id="java">
+            <img src="../../assets/c (1).png" alt="" id="c">
+          </div>
+        </div>
+
+        <div class="internship-splash">
+          <div><img src="../../assets/internsip.png" alt=""></div>
+        </div>
+          <img src="../../assets/pencil.png" alt="" id="pencil" #pencil>
+      </div>
+
+      <div class="arrowhead">
+        <div class="arrow-img" id="arrow-img">
+          <img src="../../assets/arrowhead.png" alt="" id="arrowhead">
+        </div>
+        <div class="internship-salem">
+          <div><h1>LAUNCH YOUR CAREER WITH THE TOP INTERNSHIP PROGRAMS IN SALEM</h1></div>
+          <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quia nisi unde debitis voluptate obcaecati et deserunt mollitia delectus, assumenda laborum aliquam, sint aspernatur ipsum rerum culpa magni nostrum voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fuga molestias modi et a in magnam voluptatum deserunt, at expedita cumque placeat saepe aspernatur sint, nemo inventore, perferendis tenetur asperiores.</p></div>
+        </div>
+      </div>
+      <div class="internship-technology">
+        <div class="navigation">
+          <div class="internship-filter">
+          <div class="activatelink"><a routerLink="recommended" #rla="routerLinkActive" routerLinkActive="activelink"><i [className]="rla.isActive?icon:noicon"></i>&nbsp;Internship technologies</a></div>
+          <div class="activatelink"><a routerLink="toprated" #rlb="routerLinkActive" routerLinkActive="activelink"><i [className]="rlb.isActive?icon:noicon"></i>&nbsp;Top Rated Internships</a></div>
+          <div class="activatelink"><a routerLink="freeintern" #rlc="routerLinkActive" routerLinkActive="activelink"><i [className]="rlc.isActive?icon:noicon"></i>&nbsp;Free rated Internships</a></div>
+          <div class="activatelink"><a routerLink="realtimeintern" #rld="routerLinkActive" routerLinkActive="activelink" ><i [className]="rld.isActive?icon:noicon"></i>&nbsp;Real time project</a></div>
+          <div class="search-intern" id="search-intern"><i class="fa-solid fa-magnifying-glass"></i><a routerLink="searchresults" ><input type="search" placeholder="Search Internship technology"></a></div>
+        </div>
+        <div class="intern-separate"></div>
+        </div>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+
+      <div class="students-internproject">
+        <div class="project-heading">
+          <div><h3><span>Stackers</span> Top Intern Projects</h3></div>
+        </div>
+        <div class="intern-projects">
+          <div class="projects">
+            <div class="project-tech">
+              <img src="../../assets/Angular-intern-project.jpg" alt="">
+            </div>
+            <div class="project-content">
+              <div><h2>Online Furniture Mart</h2></div>
+              <div><h3><span>St</span> S.BalaShankar, KIOT</h3></div>
+              <div><a href="https://www.google.com" target="_blank">View Website</a></div>
+            </div>
+          </div>
+
+          <div class="projects">
+            <div class="project-tech">
+              <img src="../../assets/Angular-intern-project.jpg" alt="">
+            </div>
+            <div class="project-content">
+              <div><h2>Online Furniture Mart</h2></div>
+              <div><h3><span>St</span> S.BalaShankar, KIOT</h3></div>
+              <div><a href="https://www.google.com" target="_blank">View Website</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <app-footer></app-footer>
+      </div>
+    </div>
+
+</body>
+</html>

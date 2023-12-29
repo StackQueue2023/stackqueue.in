@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACK-QUEUE | Login</title>
+</head>
+<body>
+  <!-- login page starts -->
+
+  <div class="login-form">
+    <div class="form">
+        <div class="institute-logo">
+          <a (click)="home()"><img src="../../assets/Stack Queue logo white.png" alt=""></a>
+        </div>
+        <div class="form-design">
+          <form [formGroup]="signupform">
+            <div class="form-control">
+              <h1 id="login-heading">Signup to STACK-QUEUE</h1>
+            </div>
+            <div class="form-control">
+              <label for="">Username</label>
+              <input type="text" placeholder="stacker123" formControlName="username">
+              @if(signupform.controls['username'].errors?.['required'] && signupform.controls['username'].dirty){
+                <small>Username is required</small>
+              }
+              @else if (signupform.controls['username'].errors?.['pattern']) {
+                <small>Enter valid username</small>
+              }
+            </div>
+            <div class="form-control">
+              <label for="">Email ID</label>
+              <input type="email" placeholder="stack@gmail.com" formControlName="email">
+              @if(signupform.controls['email'].errors?.['required'] && signupform.controls['email'].dirty){
+                <small>Email is required</small>
+              }
+              @else if (signupform.controls['email'].errors?.['pattern']) {
+                <small>Enter valid Email ID</small>
+              }
+            </div>
+            <div class="form-control">
+              <label for="">Phone number</label>
+              <input type="tel" placeholder="stack@gmail.com" formControlName="phonenum" maxlength="10">
+              @if(signupform.controls['phonenum'].errors?.['required'] && signupform.controls['phonenum'].dirty){
+                <small>Phone number is required</small>
+              }
+              @else if (signupform.controls['phonenum'].errors?.['pattern']) {
+                <small>Enter valid phone number</small>
+              }
+            </div>
+            <div class="form-control">
+              <label for="">Password</label>
+              <input type="password" placeholder="XXXXX" formControlName="password" #password (keyup)="passwordStore(password.value)">
+              @if(signupform.controls['password'].errors?.['required'] && signupform.controls['password'].dirty){
+                <small>Password is required</small>
+              }
+              @else if (signupform.controls['password'].errors?.['pattern']) {
+                <small>Use Alphanumeric and Characters</small>
+              }
+            </div>
+            <div class="form-control">
+              <label for="">Confirm Password</label>
+              <input type="password" placeholder="XXXXX" formControlName="confirmpassword" #confirmpassword (keyup)="checkPassword(confirmpassword.value)">
+              @if(signupform.controls['confirmpassword'].errors?.['required'] && signupform.controls['confirmpassword'].dirty){
+                <small>Confirm Password is required</small>
+              }
+              @else if(checked){
+                <small>Password does not match</small>
+              }
+            </div>
+            <div class="form-control">
+              <button>Register here</button>
+            </div>
+            <div class="form-register">
+              Already have an account? <a (click)="login()">Sign in</a>
+            </div>
+            <div>
+            </div>
+          </form>
+        </div>
+    </div>
+    <div class="login-img">
+      <img src="../../assets/men-steps.png" alt="">
+      <h1>STACK-QUEUE</h1>
+    </div>
+    <img src="../../assets/graduation-cap.png" alt="" class="graduation-cap">
+    <img src="../../assets/key.png" alt="" class="key">
+    <img src="../../assets/men-new-idea-thinking.png" alt="" class="men-thinking">
+    <img src="../../assets/men-thinking-removebg-preview (1).png" alt="" class="men-new-idea">
+  </div>
+
+
+  <!-- login page ends -->
+</body>
+</html>

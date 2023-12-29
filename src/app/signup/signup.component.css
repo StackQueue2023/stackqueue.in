@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+.login-form{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.form{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.login-img{
+  width: 70%;
+  height: 100vh;
+  background-color: #3d106b;
+  position: relative;
+}
+.login-img img{
+  position: absolute;
+  bottom:0;
+  left: 5%;
+  width: 500px;
+  height: 500px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+.login-lock{
+  position: absolute;
+  top: 23%;
+  right: 24%;
+  width: 300px;
+  height: 300px;
+  mix-blend-mode:exclusion;
+}
+.login-img h1{
+  position: absolute;
+  top: 10%;
+  left: 14%;
+  color: #fff;
+  font-size: 6vw;
+  font-family: 'Audiowide', sans-serif;
+  text-shadow: 2px 2px 2px yellow;
+}
+.graduation-cap{
+  position: absolute;
+  top: 5%;
+  right: 34%;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-5deg);
+}
+.key{
+  position: absolute;
+  top: 35%;
+  right: 23%;
+  width: 90px;
+  height: 170px;
+  transform: rotate(20deg);
+}
+.men-thinking{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.men-new-idea{
+  position: absolute;
+  width: 400px;
+  height: 437px;
+  bottom: 0;
+  right: 1.4%;
+}
+.institute-logo{
+  height: 15vh;
+}
+.form .institute-logo img{
+  width: 250px;
+  height: 100px;
+  cursor: pointer;
+}
+#login-heading{
+  padding: 0.4rem;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 1.5vw;
+}
+.form-design{
+  padding: 3rem 0 0 0;
+  display: flex;
+  height:85vh;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  /* background-color: green; */
+}
+.form-design::-webkit-scrollbar{
+  display: none;
+}
+.form-design form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.form-control{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-control small{
+  color: red;
+  font-weight: bold;
+}
+.form-control a{
+  color: #3d106b;
+}
+.form-control button{
+  width: 100%;
+  background-color: #3d106b;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.form-control input{
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+.form-control label{
+  font-weight: bold;
+}
+.working img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.working{
+  display: flex;
+  justify-content: center;
+}
+.form-register a{
+  color: #3d106b;
+  text-decoration: underline;
+  cursor: pointer;
+}

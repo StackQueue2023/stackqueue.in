@@ -1,0 +1,79 @@
+/* Header CSS starts */
+header{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 2rem 0 0;
+  z-index: 2;
+  position:fixed;
+  top:0;
+  background: #e5e5e5;
+  /* background-color: rgb(13,17,23); */
+}
+header img{
+  width: 250px;
+  height: 100px;
+  cursor: pointer;
+}
+.active{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+  background: #fff;
+}
+.course-login{
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  font-size: 1.2rem;
+  background-color:rgb(118,63,199);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.salem-courses{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.salem-courses a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.institution-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+.programming-skills{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+.programming-skills i{
+  color: #000;
+}
+.india-lang{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.india-lang h3{
+  color: #000;
+  font-size: 1.2rem;
+}
+.salem-search{
+  cursor: pointer;
+}
+.education-bell{
+  cursor: pointer;
+}
+/* Header CSS ends */

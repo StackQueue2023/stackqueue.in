@@ -1,0 +1,25 @@
+:host{
+  --color:#3d106b;
+  --whitecolor:#fff;
+}
+.search-internship{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.search-internship .search-results{
+    display: flex;
+    justify-content: center;
+}
+.search-internship .search-results h5{
+  font-size: 1.2rem;
+  color: var(--color);
+}
+.search-image{
+  display: flex;
+  justify-content: center;
+}
+.search-image img{
+  width: 200px;
+  height: 200px;
+}

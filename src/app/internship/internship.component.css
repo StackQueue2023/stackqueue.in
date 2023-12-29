@@ -1,0 +1,398 @@
+:host{
+  --color:#3d106b;
+  --whitecolor:#fff;
+}
+.splash{
+  margin-top: 6rem;
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 2rem 0 2rem;
+  position: relative;
+}
+.internship-splash{
+  position: absolute;
+  left: 35%;
+  bottom: 0;
+  z-index: 1;
+}
+/* .pencil{
+  position: absolute;
+  left: 40%;
+  top: 45%;
+} */
+.internship-splash img{
+  width: 438px;
+  height: 375px;
+  position: relative;
+}
+#pencil{
+  position: absolute;
+  left: 42%;
+  top: 41.5%;
+  width: 236.04px;
+  height: 170px;
+}
+
+.content span{
+  color: var(--color);
+  font-size: 3.5rem;
+}
+.content{
+  width: 600px;
+}
+.content h1{
+  font-size: 2.6rem;
+}
+.content p{
+  text-align: justify;
+}
+.images .logos{
+  position: relative;
+}
+.images{
+  height: 80vh;
+  width: 600px;
+}
+.images .logos{
+  height: 80vh;
+}
+.images #angular{
+  width: 147px;
+  height: 122px;
+  background-color: var(--whitecolor);
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+  position: absolute;
+  top: 20%;
+  right: 15%;
+}
+.images #figma{
+  width: 166px;
+  height: 83px;
+  background-color: var(--whitecolor);
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+  position: absolute;
+  top: 1%;
+  right: 25%;
+}
+.images #flutter{
+  width: 159px;
+  height: 75px;
+  background-color: var(--whitecolor);
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+  position: absolute;
+  top: 7%;
+  right: 65%;
+}
+.images .fullstack{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.5rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+  background-color: var(--whitecolor);
+  border-radius: 10px;
+  width: 230px;
+  height: 108px;
+  position: absolute;
+  top: 70%;
+  right: 20%;
+}
+.images .fullstack #fullstack{
+  width: 100px;
+  height: 98px;
+}
+.images #python{
+  width: 183px;
+  height: 118px;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+  background-color: var(--whitecolor);
+  position: absolute;
+  top: 21%;
+  right: 50%;
+}
+.images #react{
+  width: 145px;
+  height: 111px;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+  background-color: var(--whitecolor);
+  position: absolute;
+  top: 45%;
+  right: 0;
+}
+.images #java{
+  width: 112px;
+  height: 130px;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+  background-color: var(--whitecolor);
+  position: absolute;
+  top: 45%;
+  right: 30%;
+}
+.images #c{
+  width: 133px;
+  height: 125px;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+  background-color: var(--whitecolor);
+  position: absolute;
+  padding: 0.2rem;
+  top: 45%;
+  right: 55%;
+}
+.arrowhead{
+  margin-top: 2rem;
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  /* z-index: -1; */
+}
+
+.arrow-img{
+  display: flex;
+  justify-content: center;
+  width:700px;
+  position: relative;
+}
+.arrowhead .arrow-img img{
+  width: 420px;
+  height: 104px;
+  position: absolute;
+  bottom: 0;
+}
+.internship-salem{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 700px;
+}
+.internship-salem p{
+  text-align: justify;
+}
+
+.technology{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 4rem 2rem 2rem 2rem;
+}
+.tech-items .logo img{
+  width: 300px;
+  height: 221px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.tech-items .logo{
+  position: relative;
+}
+.free-source{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.free-source p{
+  color: var(--whitecolor);
+  background-color: #7E30E1;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-weight: 550;
+}
+.technology .tech-items{
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.technology .tech-items .contents{
+  background-color: var(--whitecolor);
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.technology .tech-items .contents h1{
+  font-size: 1.3rem;
+}
+.lecturer i{
+  color: var(--color);
+  font-size: 1.5rem;
+}
+.lecturer{
+  display: flex;
+  justify-content: space-between;
+}
+.lecturer #lecturer{
+  display: flex;
+  align-items: center;
+}
+.lecturer #learners{
+  display: flex;
+  align-items: center;
+}
+.voilet-div{
+    width: 100%;
+    height: 1px;
+    background-color: var(--color);
+}
+.learner{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.enroll{
+  display: flex;
+  justify-content: space-between;
+}
+.enroll h3{
+  color: var(--color);
+}
+.enroll button{
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: var(--color);
+  color: var(--whitecolor);
+  border-radius: 10px;
+  border: none;
+}
+.navigation{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+.navigation .internship-filter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+}
+.navigation .internship-filter div{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.navigation .internship-filter #real-time{
+  display: flex;
+  justify-content: right;
+}
+.navigation .internship-filter a{
+  text-decoration: none;
+  color: var(--color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.navigation .intern-separate{
+  width: 90%;
+  height: 0.5px;
+  background-color: #000;
+}
+.internship-filter #search-intern{
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+.search-intern i{
+  padding: 0.55rem 0.8rem 0.55rem 0.8rem;
+  background-color: #e5e5e5;
+  color: var(--color);
+  font-size: 1rem;
+  border: 1px solid black;
+  border-right: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.search-intern a{
+  width: 100%;
+}
+.search-intern input{
+  /* border-radius: 20px; */
+  outline: none;
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  width: 100%;
+  border-left: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.search-intern input:focus{
+  outline: none;
+  font-size: 1rem;
+}
+.internship-technology .navigation .internship-filter .activatelink .activelink{
+  color: green;
+}
+/* intern projects */
+.students-internproject{
+  margin-top: 2rem;
+  padding: 0 4rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.students-internproject .project-heading{
+  display: flex;
+  justify-content: center;
+}
+.students-internproject .project-heading h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.students-internproject .project-heading h3 span{
+  color: var(--color);
+}
+/* intern projects */
+.projects{
+  width: 300px;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0,0,0,0.2);
+  background-color: var(--whitecolor);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px ;
+}
+.project-tech img{
+  width: 300px;
+  height: 180px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px ;
+}
+.project-content{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.project-content span{
+  color: var(--color);
+}
+.project-content a{
+  text-decoration: none;
+  color: var(--color);
+  font-weight: 600;
+}
+.project-content a:hover{
+  text-decoration: underline;
+  color: yellowgreen;
+}
+.intern-products{
+  display: flex;
+}
+/* intern projects */

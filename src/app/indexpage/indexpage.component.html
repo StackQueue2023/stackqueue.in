@@ -1,0 +1,74 @@
+<!-- Description: This is Homepage to overview the Institution services
+     Author     : JEEVA ARAVINTH J V
+     Start Date : 01 Dec 2023
+     End Date   :
+     Reviewed   :
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splash Screen</title>
+</head>
+<body>
+  <div class="main-container">
+    <!-- header -->
+    <div id="header">
+      <app-navbar></app-navbar>
+    </div>
+    <!-- header -->
+
+    <!-- Splash acreen starts -->
+    <div class="splash-screen">
+      <div class="lifetime-access">
+          <h2 id="elicit">Elicit your life by our</h2>
+          <h2>services <span>{{services}}</span></h2>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam voluptatibus maxime nisi at, quis illo corrupti perferendis officia rerum culpa ducimus earum, doloribus soluta, molestias fugiat? Eligendi impedit saepe repudiandae.</p>
+        <div class="button-start"><button class="start-course"><div class="getclick"><div><b>Get Started</b></div></div></button></div>
+        </div>
+        <div class="splash-screen-home3">
+          <img src="../../assets/splashnew.png" alt="">
+        </div>
+        <div class="line-container">
+          <svg  viewBox="0 0 178 140" fill="none">
+            <path d="M176.086 13.7382C157.191 12.7437 138.452 5.64086 119.655 3.15306C107.077 1.48826 93.4258 1.74815 80.7496 2.38196C69.8951 2.92469 64.2644 23.7429 68.9027 31.4735C79.509 49.1507 103.376 55.457 122.319 57.9013C128.545 58.7047 136.146 60.5304 142.438 58.8827C148.978 57.1697 142.543 45.8751 138.933 44.0214C120.776 34.6975 100.246 32.676 80.4692 29.1602C65.9924 26.5866 41.6173 31.4007 39.8813 49.6295C38.7575 61.4285 45.3507 72.9497 53.691 80.6137C60.8179 87.1628 73.5539 93.5177 82.7125 96.3162C91.163 98.8983 98.5573 99.5408 107.318 99.5408C111.417 99.5408 109.217 88.6531 106.967 86.9227C100.55 81.9861 95.9917 76.5247 87.8298 73.8841C74.2086 69.4773 50.082 65.9621 37.568 74.3047C29.7764 79.4991 18.2468 90.1247 15.5565 99.5408C14.0446 104.833 14.5751 110.391 14.5751 115.874C14.5751 120.896 16.0221 123.402 17.0286 127.931C18.221 133.297 21.6671 143.105 14.5751 134.24C12.481 131.623 2.03842 127.512 2.23749 127.581C10.7077 130.513 15.1264 136.133 23.9685 136.133C32.093 136.133 37.988 128.423 41.073 122.253" stroke="white" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="splashnew">
+          <img src="../../assets/splashnew2-removebg-preview.png" alt="">
+        </div>
+        @if(events){
+        <div class="dots-rectangle">
+          <img src="../../assets/dots rectangle.png" alt="">
+        </div>
+      }
+      @else{
+        <div class="latest-news">
+          <div class="news">
+              <div class="logo-event">
+                <img src="../../assets/html_logo.png" alt="">
+              </div>
+              <div class="workshop">
+                <h2>Latest Workshop</h2>
+                <h3>HTML & CSS</h3>
+              </div>
+              <div class="workshop-btn">
+                <button>View Now&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+          </div>
+        </div>
+      }
+    </div>
+    <!-- Splash acreen ends-->
+
+    <!-- course  -->
+  </div>
+
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+</body>
+</html>
+

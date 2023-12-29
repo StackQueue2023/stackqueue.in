@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STACK-QUEUE | Login</title>
+</head>
+<body>
+  <!-- login page starts -->
+
+  <div class="login-form">
+    <div class="form">
+        <div class="institute-logo">
+          <a (click)="home()"><img src="../../assets/Stack Queue logo white.png" alt=""></a>
+        </div>
+        <div class="form-design">
+          <form [formGroup]="loginform">
+            <div>
+              <h1 id="login-heading">Login to STACK-QUEUE</h1>
+            </div>
+            <div class="working">
+              <img src="../../assets/working.png" alt="">
+            </div>
+            <div class="form-control">
+              <label for="">Email ID</label>
+              <input type="email" placeholder="stack@gmail.com" formControlName="email">
+              @if(loginform.controls['email'].errors?.['required'] && loginform.controls['email'].dirty){
+                <small>Email is required</small>
+              }
+              @else if(loginform.controls['email'].errors?.['pattern']){
+                <small>Enter valid Email</small>
+              }
+            </div>
+            <div class="form-control">
+              <label for="">Password</label>
+              <div class="password-toggle"><input type="password" placeholder="XXXXX" formControlName="password">
+                <div><i class="fa-solid fa-eye"></i></div>
+              </div>
+              @if(loginform.controls['password'].errors?.['required'] && loginform.controls['password'].dirty){
+                <small>Password is required</small>
+              }
+              @else if(loginform.controls['password'].errors?.['minlength']){
+                <small>Password contains 8 characters</small>
+              }
+            </div>
+            <div class="form-control">
+              <a (click)="forgot()">Forgot Password</a>
+            </div>
+            <div class="form-control">
+              <button>Login</button>
+            </div>
+            <div class="form-register">
+              don't have an account? <a (click)="register()">Create new</a>
+            </div>
+            <div>
+            </div>
+          </form>
+        </div>
+    </div>
+    <div class="login-img">
+      <img src="../../assets/forest.png" alt="">
+      <h1>STACK-QUEUE</h1>
+    </div>
+    <img src="../../assets/home-lock-opening.png" alt="" class="login-lock">
+    <img src="../../assets/graduation-cap.png" alt="" class="graduation-cap">
+    <img src="../../assets/key.png" alt="" class="key">
+    <img src="../../assets/men-thinking.png" alt="" class="men-thinking">
+  </div>
+
+
+  <!-- login page ends -->
+</body>
+</html>
